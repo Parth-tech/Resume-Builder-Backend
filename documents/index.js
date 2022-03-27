@@ -68,6 +68,23 @@ module.exports = ({ name, email, phone, linkedin, github, skills, exp1_org, exp1
       }
       return ``;
 }
+
+getAch1 = () => {
+      if(achieve_1.length>0){
+            return `<li><p class="lead">${achieve_1} </p></li>`
+            
+      }
+}
+getAch2 = () => {
+      if(achieve_2.length>0){
+            return `<li><p class="lead">${achieve_2} </p></li>`
+      }
+}
+getAch3 = () => {
+      if(achieve_3.length>0){
+            return `<li><p class="lead">${achieve_3} </p></li>`
+      }
+}
   return `
     <!doctype html>
     <html>
@@ -163,9 +180,9 @@ module.exports = ({ name, email, phone, linkedin, github, skills, exp1_org, exp1
                   <ul>
                   <li><p class="lead"><b>Languages: </b>${lang} </p></li>
                   <li><p class="lead"><b>Hobbies: </b>${hobbies} </p></li>
-                  <li><p class="lead">${achieve_1} </p></li>
-                  <li><p class="lead">${achieve_2} </p></li>
-                  <li><p class="lead">${achieve_3} </p></li>
+                  ${getAch1()}
+                  ${getAch2()}
+                  ${getAch3()}
                   </ul>
                   
             </div>
