@@ -72,18 +72,20 @@ module.exports = ({ name, email, phone, linkedin, github, skills, exp1_org, exp1
 getAch1 = () => {
       if(achieve_1.length>0){
             return `<li><p class="lead">${achieve_1} </p></li>`
-            
       }
+      return ``;
 }
 getAch2 = () => {
       if(achieve_2.length>0){
             return `<li><p class="lead">${achieve_2} </p></li>`
       }
+      return ``;
 }
 getAch3 = () => {
       if(achieve_3.length>0){
             return `<li><p class="lead">${achieve_3} </p></li>`
       }
+      return ``;
 }
   return `
     <!doctype html>
